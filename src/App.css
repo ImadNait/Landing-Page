@@ -1,38 +1,304 @@
-.App {
-  text-align: center;
+* {
+  font-family: "IBM Plex Mono", monospace;
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url(/public/img/13900612_5293884.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  float: center;
+  flex-direction: column;
+}
+header {
+  background-color: #ced6db;
+  background-image: url("/");
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 85px;
+  width: 100%;
+  justify-content: space-evenly;
+  z-index: 999;
+  border: transparent;
+}
+header h1 {
+  padding-bottom: 0;
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+.imgg {
+  display: inline-block;
+  position: relative;
+  width: 120px;
+  height: 100px;
+  cursor: pointer;
+}
+.menuCont {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  flex-direction: row;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.menuCont li {
+  position: relative;
+  margin: 0.8em 30px;
+}
+.menuB {
+  color: #5f6f92;
+  position: relative;
+  border-bottom: none;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 30px;
+  position: relative;
+}
+.menuB::before {
+  content: "";
+  position: absolute;
+  bottom: -13px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #1a1a4a;
+  transition: 0.8s;
+}
+.menuB:hover::before {
+  width: 100%;
+}
+.menuB:hover {
+  color: #1a1a4a;
+  transition-duration: 0.8s;
+}
+.mainImg {
+  width: 40%;
+  height: 40%;
+  min-width: 500px;
+  align-self: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  margin-top: 6%;
+  right: -55%;
+}
+.layout {
+  position: static;
+  display: inline;
+}
+h1 {
+  display: flex;
+  color: #1a1a4a;
+  font-size: 6rem;
+  font-weight: bold;
+}
+.layout .textt {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: left;
+  right: 60%;
+  top: 20%;
 }
 
-.App-logo {
-  height: 40vmin;
+.layout .holder {
+  color: #1a1a4a;
+  font-size: 7rem;
+  font-weight: bold;
+  position: relative;
+  margin-top: -1em;
+  right: -8%;
+}
+h3 {
+  display: flex;
+  margin-top: 2em;
+  color: #1a1a4a;
+  font-size: 3rem;
+  float: left;
+  position: relative;
+  right: -7%;
+}
+li {
+  display: flex;
+  color: #1a1a4a;
+  font-size: 1.5rem;
+  font-weight: bold;
+  float: left;
+  position: relative;
+  right: -7%;
+}
+.layout li {
+  font-size: 2rem;
+}
+.aboutWe {
+  position: relative;
+  left: 20%;
+  background-color: rgb(201, 220, 255);
+  display: flex;
+  margin-top: 35px;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  width: 70%;
+  justify-content: space-evenly;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.aboutWe h1 {
+  display: block;
+  text-decoration: none;
+  color: #1a1a4a;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.aboutWe p {
+  font-size: 1.5rem;
+  display: flex;
+  float: center;
+  width: 80%;
+}
+.features {
+  display: flex;
+  float: center;
+  flex-direction: column;
+}
+.features h2 {
+  color: #e7ab50;
+}
+.features .boxes {
+  display: flex;
+  float: center;
+  flex-direction: row;
+}
+
+.features .boxes .childbox {
+  padding: 2em 0;
+  border: 0 solid #9295a6;
+  border-radius: 10px;
+  background: linear-gradient(to left, rgb(170, 200, 255), rgb(208, 223, 255));
+  color: #5f6f92;
+  padding: 0;
+  margin: 15px;
+  margin-right: 50px;
+  text-align: center;
+  display: inline-block;
+  width: 400px;
+}
+.features .boxes .childbox img {
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+.Contacts {
+  display: flex;
+  float: center;
+  flex-direction: column;
+  height: fit-content;
+  width: 40%;
+
+  border-radius: 5%;
+  border: solid #f8ffb7;
+}
+.Contacts h1 {
+  position: relative;
+  padding: 0 180px;
+}
+.Contacts .emailCont {
+  z-index: 400;
+}
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.Contacts .emailCont button {
+  display: flex;
+  float: center;
+}
+.inputS input,
+textarea {
+  width: 80%;
+  height: 30px;
+  border: transparent;
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 8px;
+  margin-bottom: 40px;
+  border: solid #1a1a4a;
+}
+
+.inputS textarea {
+  height: 300px;
+}
+
+label {
+  position: absolute;
+  color: black;
+  font-size: 18px;
+  transition: 0.4s;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  background-color: transparent;
+  width: 170px;
+  height: 60px;
+  cursor: pointer;
+  color: #1a1a4a;
+  font-size: 40px;
+  font-weight: 700;
+  border: solid 2px #1a1a4a;
+  border-width: 5px;
+  border-radius: 30px;
+  padding: 0px 32px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button:hover {
+  border: solid 2px #1a1a4a;
+  background-color: #1a1a4a;
+  transition-duration: 0.8s;
+  padding: 0px 32px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.btext {
+  position: relative;
+  z-index: 40;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Contacts .ourContacts .socials {
+  margin-right: 40px;
+}
+.info {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1a1a4a;
+}
+.ourContacts p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1a1a4a;
+}
+.required {
+  position: relative;
+  color: red;
+  font-size: 10px;
+  top: -10px;
 }
