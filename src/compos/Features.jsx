@@ -4,7 +4,7 @@ export default function Features() {
   VanillaTilt.init(document.querySelectorAll(".childbox"), {
     max: 30,
     speed: 500,
-    scale: 1.05,
+    scale: 1.05
   });
 
   VanillaTilt.init(document.querySelectorAll(".childbox"));

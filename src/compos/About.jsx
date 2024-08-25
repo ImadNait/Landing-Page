@@ -4,7 +4,7 @@ export default function Aboutus() {
   VanillaTilt.init(document.querySelectorAll(".aboutWe"), {
     max: 30,
     speed: 500,
-    scale: 1.05,
+    scale: 1.05
   });
 
   VanillaTilt.init(document.querySelectorAll(".aboutWe"));
