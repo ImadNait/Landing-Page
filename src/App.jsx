@@ -1,9 +1,9 @@
-import "../src/App.css";
-import Layo from "./compos/layout";
-import Header from "./compos/header";
-import Aboutus from "./compos/About";
-import Features from "./compos/Features";
-import ContactUs from "./compos/Contact";
+import "./App.css";
+import Layo from "./Components/layout";
+import Header from "./Components/header";
+import Aboutus from "./Components/About";
+import Features from "./Components/Features";
+import ContactUs from "./Components/Contact";
 function App() {
   return (
     <>
