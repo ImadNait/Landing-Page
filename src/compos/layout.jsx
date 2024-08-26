@@ -20,7 +20,7 @@ export default function Layo() {
   return (
     <div className="layout">
       <img
-        src="/img/isometric-laptop-with-web-design-application.gif"
+        src="product/public/img/isometric-laptop-with-web-design-application.gif"
         alt=""
         className="mainImg"
       />
